@@ -7,28 +7,28 @@
     int n,edad,i=1,s=0;
     
     cout<<"\tCONTEO Y LA SUMA TOTAL DE LAS EDADES DE LOS ESTUDIANTES DE UN SALON "<<endl;
-    cout<<endl<<"Digite la cantidad de estudiantes: ";cin>>n;
+    cout<<"\nDigite la cantidad de estudiantes: ";cin>>n;
     
     if(n>1){
     	while (i<=n){
     		cout<<"Ingrese la edad del estudiante "<<i<<": ";cin>>edad;
     			s=s+edad;
-    			i++;
+    				i++;
    				 }
    				if(n>1){
-    			cout<<endl<<"La suma de las edades es: "<<s<<endl;
+    			cout<<endl<<"La suma de las edades del salon es: "<<s<<endl;
 				}
 		}
-		else if(n=1){	
+		else if(n==1){
 					cout<<"Ingrese la edad del unico estudiante: ";cin>>edad;
 					cout<<endl<<"Por ser unico estudiante la suma total del salon es su edad, que es: "<<edad<<endl;
 				}
-			else if(n=0){	
-					cout<<"No hay estudiantes en el salon ";
+			else if(n==0){	
+					cout<<"No hay estudiantes en el salon "<<endl;
 				}
 				else{
-					cout<<"La cantidad de estudiantes no puede ser negativa ";
-					}
+					cout<<"La cantidad de estudiantes no puede ser negativa "<<endl;
+				}
     system("pause");
   	return 0;
  }
